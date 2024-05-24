@@ -6,11 +6,6 @@ import { useState } from 'react';
 
 
 function App() {
-  const [numberCall, setNumberCall] = useState(4);
-  const [greeting, setGreeting] = useState("greeting");
-  const params = useParams()
-
-  console.log(params);
   return (
     <div className="App">
       <h1>React Router Tutorial</h1>
@@ -20,10 +15,10 @@ function App() {
             <Link to="home">Home</Link>
           </li>
           <li>
-            <Link to={`/${numberCall}`}>Number</Link>
+            <Link to={`/${4}`}>Number</Link>
           </li>
           <li>
-            <Link to={`/${greeting}`}>Greeting</Link>
+            <Link to={`/${"hola"}`}>Greeting</Link>
           </li>
           
         </ul>

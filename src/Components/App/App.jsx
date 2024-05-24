@@ -1,8 +1,7 @@
 import './App.css';
-import { Routes,Route,Link, useParams } from 'react-router-dom';
+import { Routes,Route,Link } from 'react-router-dom';
 import Home from '../Home/Home';
 import Number from '../Number/Number';
-import { useState } from 'react';
 
 
 function App() {
@@ -25,9 +24,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="home" element={<Home/>}/>
-        <Route path="/:id" element={<Number/>} />
-        <Route path="/:id/:bgColor" element={<Number/>} />
-        <Route path="/:id/:bgColor/:ffColor" element={<Number/>} />
+        <Route path="/:id/:bgColor?/:ffColor?" element={<Number/>} />
         
       </Routes>
     </div>
